@@ -1,0 +1,156 @@
+{% extends 'polls/base.html' %}
+{% block about %}
+{% load static %}
+
+    <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">Giải Pháp <span class="text-primary">Thông Minh</span> Bảo Vệ Gia Đình Mọi Nhà</h1>
+                    <p class="animated fadeIn mb-4 pb-2">Giải pháp cảnh báo khói và cháy thông minh </p>
+
+                </div>
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="{% static 'polls/Anh/cam-index.jpg' %}" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="{% static 'polls/Anh/cam2-index.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="{% static 'polls/Anh/cam.jpg' %}">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">#1 Phần Mềm Thông Minh</h1>
+                        <p class="mb-4">FireProtect ra đời để xóa bỏ nỗi lo âu của mọi người mà hỏa hoạn gây ra.</p>
+                        <p class="mb-4">Camera cảnh báo cháy nổ phát hiện khói của chúng tôi được phân tích video thông minh giúp phát hiện khói và các mối nguy hiểm khác trong các môi trường quan trọng ở giai đoạn rất sớm để tránh tình hướng cháy nổ khi mọi thứ chưa quá muộn. Trong trường hợp các công nghệ phát hiện truyền thống không thành công, phân tích video của chúng tôi là giải pháp an toàn, đáng tin cậy để bảo vệ con người, tài sản và quy trình sản xuất của bạn.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Đặt sự an toàn làm ưu tiên hàng đầu.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Xóa bỏ bất an cho mọi người.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Đưa ra giải pháp nhanh chóng, tối ưu nhất.</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="{% url 'userMember:registerUser' %}">Đăng Ký Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Call to Action Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded p-3">
+                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <img class="img-fluid rounded w-100" src="{% static 'polls/Anh/call-to-action.jpg' %}" alt="">
+                            </div>
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="mb-4">
+                                    <h1 class="mb-3">Liên Hệ Trực Tiếp Với Chúng Tôi</h1>
+                                    <p>Mọi chi tiết thắc mắc vui lòng gọi hotline hoặc đặt lịch hẹn. Chúng tôi sẽ liên lạc lại sớm nhất cho bạn để tư vấn về sản phẩm.</p>
+                                </div>
+                                <a href="" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Hotline</a>
+                                <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Đặt lịch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to Action End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Đội ngũ nhân sự</h1>
+                    <p>Chúng tôi có nguồn gốc từ các công ty đã đi tiên phong trong ngành phân tích video. Chuyên môn và nhiều năm kinh nghiệm của những người sáng lập đã mang lại giải pháp phân tích video vững chắc cho môi trường có rủi ro cao hoặc tác động cao của nhà máy kho khu vực dễ cháy nổ để phòng chống cháy hiện quả nhất.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{% static 'polls/Anh/team-1.jpg' %}" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Nguyễn Thị A</h5>
+                                <small>Chuyên viên tư vấn</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{% static 'polls/Anh/team-2.jpg' %}" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Trần Văn B</h5>
+                                <small>Chuyên viên đưa ra giải pháp</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{% static 'polls/Anh/team-3.jpg' %}" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Đào Thị C</h5>
+                                <small>Chuyên viên đưa ra giải pháp</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{% static 'polls/Anh/team-4.jpg' %}" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Nguyễn Minh C</h5>
+                                <small>Kỹ thuật viên</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+{% endblock %}
